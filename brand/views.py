@@ -5,6 +5,15 @@ from django.http import HttpResponse
 def brandhome(request):
     return render(request,'brandhome.html')
 
+def brandreturn(request):
+    query = request.GET.get('brandid')
+    message = "Hello {} brand".format(query)
+    template = "brandreturn.html"
+    context = {
+        'message': message,
+    }
+    return render(request,template, context)   
+
 def say_hello(request):
     
     return render(request,'hello.html',{'name':'Alberto'})

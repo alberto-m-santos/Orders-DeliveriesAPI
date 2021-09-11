@@ -3,6 +3,7 @@ from . import views
 
 #URL Config
 urlpatterns = [
-    path('', views.brandhome),
+    #path('', views.brandhome),
+    path('', views.brandreturn),
     path('hello/', views.say_hello),
 ]

@@ -1,0 +1,10 @@
+<html>
+    <body>
+    {% if request.GET.brandid %}
+        <h1>{{message}}</h1>
+    {% else %}
+        <h1>Insert the Brand id as parameter:</h1>
+        <h2>/brand/?brandid=Huub</h2>
+    {% endif %}
+    </body>
+</html>
